@@ -31,24 +31,21 @@ Examples:
 
  	http://localhost/osclass.3.3.2/api/v0.1/item/1
 
+
+
 Easy to develop:
-
 The below code implements two query functions:
-
-1. get all enable locale list
-	url: {homeurl}/api/v0.1/locale
-
-2. get locale detail, locale code = ??? 
-	url: {homeurl}/locale/zh_CN
+1 get all enable locale listurl: 
+2 get locale detail, locale code = ??? 
 
 Code:
+
 
 /**
 * Return all locales enabled.
 *
 * @url GET /locale
 * @url GET /locale/$code
-
 */
 
 public function getLocale($code) {
