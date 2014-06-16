@@ -40,21 +40,22 @@ The below code implements two query functions:
 
 Code:
 
+```php
+class Tes
 *  @url GET /locale
 *  @url GET /locale/$code
  
+public function getLocale($code){
+	if ($code) {
+	   $result = OSCLocale::newInstance()->findByCode($code);
+	} else {
+	   $result = OSCLocale::newInstance()->listAllEnabled();
+	}
+	return ($result);
+}
 
 
-		public function getLocale($code){
-		if ($code) {
-		   $result = OSCLocale::newInstance()->findByCode($code);
-		} else {
-		   $result = OSCLocale::newInstance()->listAllEnabled();
-		}
-		return ($result);
-		}
-
-
+```
 
 
 The current version is only a start. Completed a few functional for most query.
