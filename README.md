@@ -36,9 +36,11 @@ Easy to develop:
 The below code implements two query functions:
 
 1. get all enable locale list
+
 	url: {homeurl}/api/v0.1/locale
 
 2. get locale detail, locale code = ??? 
+
 	url: {homeurl}/locale/zh_CN
 
 Code:
@@ -57,6 +59,7 @@ Code:
         } else {
             $result = OSCLocale::newInstance()->listAllEnabled();
         }
+
 
         return ($result);
     }
