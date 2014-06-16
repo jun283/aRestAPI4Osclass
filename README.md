@@ -44,14 +44,13 @@ Code:
 *  @url GET /locale/$code
  
 
-public function getLocale($code) 
-	{
+
+		public function getLocale($code){
 		if ($code) {
 		   $result = OSCLocale::newInstance()->findByCode($code);
 		} else {
 		   $result = OSCLocale::newInstance()->listAllEnabled();
 		}
-		
 		return ($result);
 	}
 
