@@ -15,23 +15,25 @@ Easy to use:
 
 Examples:
 
-1. http://localhost/osclass.3.3.2/api/v0.1/category or {hoemeurl}/api/v0.1/category 
-	Get category list, include all language.
+1.Get category list, include all language.
+  	http://localhost/osclass.3.3.2/api/v0.1/category or {hoemeurl}/api/v0.1/category
 	
-2.http://localhost/osclass.3.3.2/api/v0.1/category/9
-	Get a category detail, category id = 9 
+2.Get a category detail, category id = 9 
+  	http://localhost/osclass.3.3.2/api/v0.1/category/9
 	
-3.http://localhost/osclass.3.3.2/api/v0.1/category/9/items
-	Get all items list in category id = 9
-	
-4.http://localhost/osclass.3.3.2/api/v0.1/item/1
-	Get item detail,item id = 1
-	
+3.Get all items list in category id = 9	
+   	http://localhost/osclass.3.3.2/api/v0.1/category/9/items
+
+4.Get item detail,item id = 1
+ 	http://localhost/osclass.3.3.2/api/v0.1/item/1
+
 Easy to develop:
 
 The below code implements two query functions:
+
 1. get all enable locale list
 	url: {homeurl}/api/v0.1/locale
+
 2. get locale detail, locale code = ??? 
 	url: {homeurl}/locale/zh_CN
 
