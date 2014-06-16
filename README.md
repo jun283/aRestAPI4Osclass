@@ -6,12 +6,15 @@ It is base on a very nice open source project, a rest server framework: jacwrigh
 https://github.com/jacwright/RestServer
 
 Easy to set up.
+
 1. Create named api(or other name) folder in osclass folder.
 2. Copy all files to api folder.
 3. Run.
 
 Easy to use:
+
 Examples:
+
 1. http://localhost/osclass.3.3.2/api/v0.1/category or {hoemeurl}/api/v0.1/category 
 	Get category list, include all language.
 	
@@ -25,6 +28,7 @@ Examples:
 	Get item detail,item id = 1
 	
 Easy to develop:
+
 The below code implements two query functions:
 1. get all enable locale list
 	url: {homeurl}/api/v0.1/locale
