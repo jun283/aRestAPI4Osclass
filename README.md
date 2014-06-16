@@ -52,7 +52,8 @@ Code:
 		   $result = OSCLocale::newInstance()->listAllEnabled();
 		}
 		return ($result);
-	}
+		}
+
 
 
 
