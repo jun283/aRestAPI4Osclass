@@ -48,14 +48,18 @@ Code:
 * @url GET /locale/$code
 */
 
-public function getLocale($code) {
+public function getLocale($code) 
+{
 	if ($code) {
-	    $result = OSCLocale::newInstance()->findByCode($code);
+	   $result = OSCLocale::newInstance()->findByCode($code);
 	} else {
-	    $result = OSCLocale::newInstance()->listAllEnabled();
+	   $result = OSCLocale::newInstance()->listAllEnabled();
 	}
+	
 	return ($result);
 }
+
+
 
 The current version is only a start. Completed a few functional for most query.
 Next, This API server, ARestAPI4OSClass, need a REST API Authorization & Authentication, and finish PUT, DELETE, etc. for EDIT or DELETE data.
