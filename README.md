@@ -40,15 +40,11 @@ The below code implements two query functions:
 
 Code:
 
+*  @url GET /locale
+*  @url GET /locale/$code
+ 
 
-/**
-* Return all locales enabled.
-*
-* @url GET /locale
-* @url GET /locale/$code
-*/
-
-	public function getLocale($code) 
+public function getLocale($code) 
 	{
 		if ($code) {
 		   $result = OSCLocale::newInstance()->findByCode($code);
