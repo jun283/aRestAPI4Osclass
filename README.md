@@ -41,7 +41,7 @@ The below code implements two query functions:
 Code:
 
 ```php
-class Tes
+
 *  @url GET /locale
 *  @url GET /locale/$code
  
